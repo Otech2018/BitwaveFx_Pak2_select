@@ -22,7 +22,6 @@
             </li>
             <li><a href="about"> about us </a></li>
 			<li><a href="news"> news </a></li>			
-            <li><a href="plan"> investment plan </a></li>
             <li><a href="faq"> FAQ </a></li>
             <li>
                 <a href="support">Contact Us</a>
@@ -103,7 +102,6 @@
 						</li>
 						
                         
-                        <li class="has-mega gc_main_navigation"><a href="affiliate" class="gc_main_navigation">Affiliate Programe</a>
                             
                         </li>
                         <li class="has-mega gc_main_navigation"><a href="faq" class="gc_main_navigation">FAQs </a>

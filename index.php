@@ -1,4 +1,5 @@
-<!DOCTYPE HTML>
+<?php include('settings.php'); ?>
+<!DOCTYPE html>
 
 
 <html lang="zxx">
