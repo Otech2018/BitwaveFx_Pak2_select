@@ -7,7 +7,7 @@
 
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     
-    <title>international-interest.com</title>
+    <title><?=$site_name?> | About </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    
     <meta name="author" content="" />
@@ -54,7 +54,7 @@
 
                     <div class="col-lg-9 col-md-9 col-12 col-sm-8">
 
-                        <h1>About iLi Group</h1>
+                        <h1>About <?=$site_name?></h1>
                     </div>
                     <div class="col-lg-3 col-md-3 col-12 col-sm-4">
                         <div class="sub_title_section">
@@ -142,7 +142,7 @@
         <div class="counter-section2">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-12 col-sm-6">
+                    <div class="col-lg-4 col-md-4 col-12 col-sm-6">
                         <div class="counter_cntnt_box">
                             <div class="tb_icon investment_icon_circle">
                                 <div class="icon"><i class="flaticon-bar-chart"></i>
@@ -150,25 +150,13 @@
                                 </div>
                                 <div class="investment_border_wrapper"></div>
                             </div>
-                            <div class="count-description"><span class="timer">36</span>
+                            <div class="count-description"><span class="timer"><?=$days_online;?></span>
                                 <h5 class="con1"> <a href="#">days online</a></h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-12 col-sm-6">
-                        <div class="counter_cntnt_box">
-                            <div class="tb_icon investment_icon_circle blue_icon_circle">
-                                <div class="icon"><i class="flaticon-user"></i>
-
-                                </div>
-                                <div class="investment_border_wrapper blue_border_wrapper"></div>
-                            </div>
-                            <div class="count-description"> <span class="timer">447</span>
-                                <h5 class="con2"> <a href="#"> registered users </a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-12 col-sm-6">
+                    
+                    <div class="col-lg-4 col-md-4 col-12 col-sm-6">
                         <div class="counter_cntnt_box">
                             <div class="tb_icon investment_icon_circle red_info_circle">
                                 <div class="icon"><i class="flaticon-salary"></i>
@@ -176,12 +164,12 @@
                                 </div>
                                 <div class="investment_border_wrapper red_border_wrapper"></div>
                             </div>
-                            <div class="count-description"> <span class="timer"> 22123.88</span>
+                            <div class="count-description"> <span class="timer"> <?=$all_deposit; ?></span>
                                 <h5 class="con2"> <a href="#"> total deposit </a></h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-12 col-sm-6">
+                    <div class="col-lg-4 col-md-4 col-12 col-sm-6">
                         <div class="counter_cntnt_box">
                             <div class="tb_icon investment_icon_circle green_info_circle">
                                 <div class="icon"><i class="flaticon-withdrawal"></i>
@@ -189,7 +177,7 @@
                                 </div>
                                 <div class="investment_border_wrapper green_border_wrapper"></div>
                             </div>
-                            <div class="count-description"> <span class="timer"> 4843.71</span>
+                            <div class="count-description"> <span class="timer"> <?=$all_cashout;?></span>
                                 <h5 class="con4"> <a href="#"> total  withdraw</a></h5>
                             </div>
                         </div>
@@ -208,7 +196,7 @@
 
                 <div class="col-md-12 col-lg-12 col-sm-12 col-12">
                     <div class="sv_heading_wraper heading_wrapper_dark dark_heading">
-                        <h4> iLi Group</h4>
+                        <h4> <?=$site_name?> </h4>
                         <h3>Exclusive Features</h3>
 
                     </div>

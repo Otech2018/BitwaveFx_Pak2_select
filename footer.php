@@ -11,17 +11,17 @@
                         <p>We are a full service Digital Marketing Agency all the foundational tool you need.</p>
                         <div class="counter-section">
                             <div class="ft_about_icon float_left">
-                                <i class="flaticon-user"></i>
+                                <i class="flaticon-money"></i>
                                 <div class="ft_abt_text_wrapper">
-                                    <p class="timer"> 444</p>
-                                    <h4>total member</h4>
+                                    <p class="timer"> <?=$all_cashout;?></p>
+                                    <h4>total Withdraw</h4>
                                 </div>
 
                             </div>
                             <div class="ft_about_icon float_left">
                                 <i class="flaticon-money-bag"></i>
                                 <div class="ft_abt_text_wrapper">
-                                    <p class="timer">21118.30</p>
+                                    <p class="timer"><?=$all_deposit;?></p>
                                     <h4>total deposited</h4>
                                 </div>
                             </div>
@@ -75,28 +75,25 @@
 
                         <ul>
                             <li>
-							<a href="tel:+442030263854">
+							<a href="tel:<?=$site_phone; ?> ">
 							<i class="flaticon-phone-contact"></i>
-							<b>	(+44) 203 026 3854 </b> (London Office)
+							<b>	<?=$site_phone; ?> </b> 
 							</a>
                             </li>
 							
-							    <li>
-							<a href="tel:+14243513552">
-							<i class="flaticon-phone-contact"></i>
-							<b>	(+1) 424 351 3552 </b> (International)
-							</a>
-                            </li>
+							
 							
 							
                             <li>
-							<a href="mailto:internationallegalprofit@gmail.com"><i class="flaticon-mail"></i>internationallegalprofit@gmail.com
+							<a href="mailto:<?=$site_email; ?> "><i class="flaticon-mail"></i>
+                                <?=$site_email; ?> 
 							</a>
                             </li>
-                            <li><a href="https://t.me/iLi2Support"><i class="flaticon-language"></i>Telegram : @iLi2Support</a>
+                            <li><a href="<?=$site_telegram; ?>" target="_blank" ><i class="flaticon-language"></i>Telegram</a>
                             </li>
-
-                            <li><i class="flaticon-placeholder"></i>77 Borough High St, SE1 9GF, UK
+                            <li><a href="<?=$site_whatsapp; ?>" target="_blank" ><i class="flaticon-language"></i>Whatsapp</a>
+                            </li>
+                            <li><i class="flaticon-placeholder"></i><?=$site_address; ?> 
                             </li>
                         </ul>
                     </div>
@@ -105,7 +102,7 @@
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                     <div class="copyright_wrapper float_left">
                         <div class="copyright">
-                            <p>Copyright &copy; 2020-2021 www.International-Interest.com. all right reserved</p>
+                            <p>Copyright &copy; 2020-2021 <?=$site_link; ?>  all right reserved</p>
                         </div>
                         <div class="social_link_foter">
 

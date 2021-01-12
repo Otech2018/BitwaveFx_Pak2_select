@@ -7,11 +7,11 @@
     </div>
     <div class="cursor cursor3"></div>
     <!-- Top Scroll Start -->
-    <a href="javascript:" id="return-to-top" class="index3_scroll"> UP</a>
+    <a href="javascript:" id="return-to-top" class="index3_scroll">TOP</a>
     <!-- Top Scroll End -->
     <!-- cp navi wrapper Start -->
     <nav class="cd-dropdown index3_cd_dropdown d-block d-sm-block d-md-block d-lg-none d-xl-none">
-        <h2><a href="home"> international-interest.com </a></h2>
+        <h2><a href="home"> <?=$site_name; ?></a></h2>
         <a href="#0" class="cd-close">Close</a>
         <ul class="cd-dropdown-content">
             
@@ -77,7 +77,7 @@
             </header>
             <div class="top_header_right_wrapper top_phonecalls">
                 <p><i class="flaticon-phone-contact">
-					</i> (+44) 203 026 3854
+					</i> <?=$site_phone;?>
 				</p>
                 
 				<div class="header_btn index3_header_btn">

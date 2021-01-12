@@ -2,7 +2,7 @@
 
 
 $reg_Date = date('Y-m-d');
-$deposite_exp_date = date('Y-m-d',strtotime('14 days') );
+$deposite_exp_date = date('Y-m-d',strtotime('30 days') );
 
 
 $site_name ="BitWaveFx";
@@ -10,15 +10,12 @@ $site_link ="bitwavefx.com";
 $site_email ="info@bitwavefx.com";
 $site_address ="no 6 Tecnopoy Road London";
 $site_phone ="+44 7520 633267";
-$site_eth ="0x2e02DD9b7Ceda9581c0f8883028DA4ac1f3a6e30";
 $site_btc ="158N5dCHwuCQoxspob2SBMVzcuguGeLbcC";
 
-$site_lit ="0x2e02DD9b7Ceda9581c0f8883028DA4ac1f3a6e30rtr";
-$site_rip ="0x2e02DD9b7Ceda9581c0f8883028DA4ac1f3a6e30";
 
 
 
-
+			$min_amt = "50";
 
 
 
