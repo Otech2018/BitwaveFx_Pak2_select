@@ -315,32 +315,11 @@ Every page of this website is dedicated to these three factors in some fashion.
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12">
-                    <div class="investment_box_wrapper index2_investment_box_Wraper index3_investment_box_Wraper float_left">
-                        <img src="images/in1.png" alt="img">
-                        <div class="investment_icon_circle">
-                            <i class="flaticon-bar-chart"></i>
-                        </div>
-                        <div class="investment_border_wrapper"></div>
-                        <div class="investment_content_wrapper">
-                            <h1><a href="#">Bronze Plan</a></h1>
-                            <div class="line_shape line_shape2"></div>
-                            <p>3% Daily Forever
-                                <br> Minimum Investment  1$
-                                <br> Maximum Investment 99$
-                                <br> Minimum Withdrawal  1$
-                                <br> Instant Withdrawal</p>
-                        </div>
-                        <div class="about_btn plans_btn index2_investment_btn">
-                            <ul>
-                                <li>
-                                                                         <a href="signup">Invest Now</a>
-                                                                       
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                   
                 </div>
-                <div class="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12">
+
+
+                <div class="col-xl-6 col-md-12 col-lg-12 col-sm-12 col-12">
                     <div class="investment_box_wrapper index2_investment_box_Wraper index3_investment_box_Wraper float_left">
                         <img src="images/in2.png" alt="img">
                         <div class="investment_icon_circle red_info_circle">
@@ -348,12 +327,12 @@ Every page of this website is dedicated to these three factors in some fashion.
                         </div>
                         <div class="investment_border_wrapper red_border_wrapper"></div>
                         <div class="investment_content_wrapper red_content_wrapper">
-                            <h1><a href="#">Silver Plan</a></h1>
+                            <h1><a href="#">35% In 30Days</a></h1>
                             <div class="line_shape line_shape2"></div>
-                            <p>3.25% Daily Forever
-                                <br> Minimum Investment 100$
-                                <br> Maximum Investment 999$
-                                <br> Minimum Withdrawal  1$
+                            <p>4.5% Daily 
+                                <br> Minimum Investment $3445
+                                <br> Maximum Investment $3494
+                                <br> Cash Out From 15Days
                                 <br> Instant Withdrawal</p>
                         </div>
                         <div class="about_btn plans_btn red_btn_plans index2_investment_btn">
@@ -366,57 +345,9 @@ Every page of this website is dedicated to these three factors in some fashion.
                         </div>
                     </div>
                 </div>
+              
                 <div class="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12">
-                    <div class="investment_box_wrapper index2_investment_box_Wraper index3_investment_box_Wraper float_left">
-                        <img src="images/in4.png" alt="img">
-                        <div class="investment_icon_circle blue_icon_circle">
-                            <i class="flaticon-gold"></i>
-                        </div>
-                        <div class="investment_border_wrapper blue_border_wrapper"></div>
-                        <div class="investment_content_wrapper blue_content_wrapper">
-                            <h1><a href="#">Gold Plan</a></h1>
-                            <div class="line_shape line_shape2"></div>
-                            <p>3.5% Daily Forever
-                                <br> Minimum Investment 1000$
-                                <br> Maximum Investment 9999$
-                                <br> Minimum Withdrawal  1$
-                                <br> Instant Withdrawal</p>
-                        </div>
-                        <div class="about_btn plans_btn blue_btn_plans index2_investment_btn">
-                            <ul>
-                                <li>
-                                                                         <a href="signup">Invest Now</a>
-                                                                       
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-lg-6 col-sm-6 col-12">
-                    <div class="investment_box_wrapper index2_investment_box_Wraper index3_investment_box_Wraper float_left">
-                        <img src="images/in3.png" alt="img">
-                        <div class="investment_icon_circle green_info_circle">
-                            <i class="fas fa-calendar-alt"></i>
-                        </div>
-                        <div class="investment_border_wrapper green_border_wrapper"></div>
-                        <div class="investment_content_wrapper green_content_wrapper">
-                            <h1><a href="#">VIP Plan</a></h1>
-                            <div class="line_shape line_shape2"></div>
-                            <p>4% Daily Forever
-                                <br> Minimum Investment 10000$
-                                <br> Maximum Investment 50000$
-                                <br> Minimum Withdrawal  1$
-                                <br> Instant Withdrawal</p>
-                        </div>
-                        <div class="about_btn plans_btn green_plan_btn index2_investment_btn">
-                            <ul>
-                                <li>
-                                                                         <a href="signup">Invest Now</a>
-                                                                       
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>

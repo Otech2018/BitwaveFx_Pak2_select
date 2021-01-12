@@ -1,0 +1,18 @@
+https://min-api.cryptocompare.com/data/price?fsym=XRP&tsyms=BTC,USD,EUR
+[20-Dec-2020 12:34:47 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
+[20-Dec-2020 12:34:53 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
+[20-Dec-2020 12:35:05 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
+[20-Dec-2020 12:35:16 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
+[20-Dec-2020 12:36:34 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
+[20-Dec-2020 12:36:40 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
+[20-Dec-2020 12:40:46 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
+[20-Dec-2020 12:44:43 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
+[20-Dec-2020 13:48:23 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
+[20-Dec-2020 19:06:17 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
+[20-Dec-2020 19:06:54 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
+[20-Dec-2020 19:07:23 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
+[20-Dec-2020 19:07:46 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
+[20-Dec-2020 19:10:51 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
+[20-Dec-2020 19:11:04 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
+[20-Dec-2020 19:14:13 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
+[22-Dec-2020 17:13:03 UTC] PHP Warning:  extract() expects parameter 1 to be array, bool given in /home3/emaxequi/crystalgrandinvestment.com/frm/header.php on line 11
