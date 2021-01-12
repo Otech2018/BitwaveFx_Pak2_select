@@ -1,7 +1,7 @@
 
 <?php
 
- include('../inc/settings.php'); 
+ include('../settings.php'); 
 
 
 if( !loggedin() ){
