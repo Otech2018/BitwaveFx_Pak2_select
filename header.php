@@ -7,38 +7,37 @@
     </div>
     <div class="cursor cursor3"></div>
     <!-- Top Scroll Start -->
-    <a href="javascript:" id="return-to-top" class="index3_scroll"> <i class="fas fa-angle-double-up"></i></a>
+    <a href="javascript:" id="return-to-top" class="index3_scroll"> UP</a>
     <!-- Top Scroll End -->
     <!-- cp navi wrapper Start -->
     <nav class="cd-dropdown index3_cd_dropdown d-block d-sm-block d-md-block d-lg-none d-xl-none">
-        <h2><a href="?a=home"> international-interest.com </a></h2>
+        <h2><a href="home"> international-interest.com </a></h2>
         <a href="#0" class="cd-close">Close</a>
         <ul class="cd-dropdown-content">
             
              <li>
                  
-                <a href="?a=home">Home</a>
+                <a href="home">Home</a>
                 
             </li>
-            <li><a href="?a=about"> about us </a></li>
-			<li><a href="?a=news"> news </a></li>			
-            <li><a href="?a=plan"> investment plan </a></li>
-            <li><a href="?a=affiliate"> Affiliate Programme </a></li>
-            <li><a href="?a=faq"> FAQ </a></li>
+            <li><a href="about"> about us </a></li>
+			<li><a href="news"> news </a></li>			
+            <li><a href="plan"> investment plan </a></li>
+            <li><a href="faq"> FAQ </a></li>
             <li>
-                <a href="?a=support">Contact Us</a>
+                <a href="support">Contact Us</a>
            
             </li>
                         <li>
-                <a href="?a=signup">Sign Up</a></li>
-            <li><a href="?a=login"> login </a></li>
+                <a href="signup">Sign Up</a></li>
+            <li><a href="login"> login </a></li>
                     </ul>
         <!-- .cd-dropdown-content -->
     </nav>
     <div class="cp_navi_main_wrapper index2_header_wrapper index3_header_wrapper float_left">
         <div class="container-fluid">
             <div class="cp_logo_wrapper">
-                <a href="?a=home">
+                <a href="home">
                     <img src="images/logo.png" alt="logo">
                 </a>
             </div>
@@ -85,9 +84,9 @@
 				<div class="header_btn index3_header_btn">
                     <ul>
                                                 <li>
-                            <a href="?a=signup"> register </a> </li>
+                            <a href="signup"> register </a> </li>
                         <li>
-                            <a href="?a=login"> login </a> </li>
+                            <a href="login"> login </a> </li>
                                                 </ul>
 
                 </div>
@@ -96,22 +95,21 @@
             <div class="cp_navigation_wrapper">
                 <div class="mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
                     <ul class="main_nav_ul">
-                        <li class="has-mega gc_main_navigation"><a href="?a=home" class="gc_main_navigation active_class">Home</a>
+                        <li class="has-mega gc_main_navigation"><a href="home" class="gc_main_navigation active_class">Home</a>
                         </li>   
-                        <li><a href="?a=about" class="gc_main_navigation">about us</a>
+                        <li><a href="about" class="gc_main_navigation">about us</a>
 						</li>
-                        <li><a href="?a=news" class="gc_main_navigation">news</a>
+                        <li><a href="news" class="gc_main_navigation">news</a>
 						</li>
-						<li><a href="?a=plan" class="gc_main_navigation">investment plan</a>
-						</li>
+						
                         
-                        <li class="has-mega gc_main_navigation"><a href="?a=affiliate" class="gc_main_navigation">Affiliate Programe</a>
+                        <li class="has-mega gc_main_navigation"><a href="affiliate" class="gc_main_navigation">Affiliate Programe</a>
                             
                         </li>
-                        <li class="has-mega gc_main_navigation"><a href="?a=faq" class="gc_main_navigation">FAQs </a>
+                        <li class="has-mega gc_main_navigation"><a href="faq" class="gc_main_navigation">FAQs </a>
                             
                         </li>
-                        <li class="has-mega gc_main_navigation"><a href="?a=support" class="gc_main_navigation">Contact Us </a>
+                        <li class="has-mega gc_main_navigation"><a href="support" class="gc_main_navigation">Contact Us </a>
                             
                         </li>
                        

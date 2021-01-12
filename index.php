@@ -27,27 +27,12 @@
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
     <!--favicon-->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 
 
 
-		<!-- Smartsupp Live Chat script -->
-<script type="text/javascript">
-var _smartsupp = _smartsupp || {};
-_smartsupp.key = 'e707f023ece5a20a7cdc716c93e80e0e7ef624df';
-window.smartsupp||(function(d) {
-  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-  c.type='text/javascript';c.charset='utf-8';c.async=true;
-  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-})(document);
-</script>
-	
-	
-	
-
-	
 </head>
 
 <body>
@@ -85,10 +70,10 @@ For <span>Future</span></h3>
                                         <div class="slider_btn index2_sliderbtn index3_sliderbtn float_left">
                                             <ul>
                                                 <li data-animation="animated bounceInLeft">
-                                                    <a href="?a=signup">start Now</a>
+                                                    <a href="signup">start Now</a>
                                                 </li>
                                                 <li data-animation="animated bounceInLeft">
-                                                    <a href="?a=login">Log In</a>
+                                                    <a href="login">Log In</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -121,10 +106,10 @@ For <span>Future</span></h3>
                                         <div class="slider_btn index2_sliderbtn index3_sliderbtn float_left">
                                             <ul>
                                                 <li data-animation="animated bounceInLeft">
-                                                    <a href="?a=signup">start now</a>
+                                                    <a href="signup">start now</a>
                                                 </li>
                                                 <li data-animation="animated bounceInLeft">
-                                                    <a href="?a=login">log in</a>
+                                                    <a href="login">log in</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -159,10 +144,10 @@ In international interest the investments are insured and guaranteed by the best
                                         <div class="slider_btn index2_sliderbtn index3_sliderbtn float_left">
                                             <ul>
                                                 <li data-animation="animated bounceInLeft">
-                                                    <a href="?a=signup">start now</a>
+                                                    <a href="signup">start now</a>
                                                 </li>
                                                 <li data-animation="animated bounceInLeft">
-                                                    <a href="?a=login">log in</a>
+                                                    <a href="login">log in</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -226,7 +211,7 @@ Every page of this website is dedicated to these three factors in some fashion.
                             <div class="about_btn index3_about_btn float_left">
                                 <ul>
                                     <li>
-                                        <a href="?a=about">About iLi Group</a>
+                                        <a href="about">About iLi Group</a>
                                     </li>
                                 </ul>
                             </div>
@@ -347,7 +332,7 @@ Every page of this website is dedicated to these three factors in some fashion.
                         <div class="about_btn plans_btn index2_investment_btn">
                             <ul>
                                 <li>
-                                                                         <a href="?a=signup">Invest Now</a>
+                                                                         <a href="signup">Invest Now</a>
                                                                        
                                 </li>
                             </ul>
@@ -373,7 +358,7 @@ Every page of this website is dedicated to these three factors in some fashion.
                         <div class="about_btn plans_btn red_btn_plans index2_investment_btn">
                             <ul>
                                 <li>
-                                                                         <a href="?a=signup">Invest Now</a>
+                                                                         <a href="signup">Invest Now</a>
                                                                        
                                 </li>
                             </ul>
@@ -399,7 +384,7 @@ Every page of this website is dedicated to these three factors in some fashion.
                         <div class="about_btn plans_btn blue_btn_plans index2_investment_btn">
                             <ul>
                                 <li>
-                                                                         <a href="?a=signup">Invest Now</a>
+                                                                         <a href="signup">Invest Now</a>
                                                                        
                                 </li>
                             </ul>
@@ -425,7 +410,7 @@ Every page of this website is dedicated to these three factors in some fashion.
                         <div class="about_btn plans_btn green_plan_btn index2_investment_btn">
                             <ul>
                                 <li>
-                                                                         <a href="?a=signup">Invest Now</a>
+                                                                         <a href="signup">Invest Now</a>
                                                                        
                                 </li>
                             </ul>
@@ -907,7 +892,7 @@ Every page of this website is dedicated to these three factors in some fashion.
                         <div class="about_btn float_left inner_abt_btn">
                             <ul>
                                 <li>
-                                    <a href="?a=affiliate">Affiliate Program</a>
+                                    <a href="affiliate">Affiliate Program</a>
                                 </li>
                             </ul>
                         </div>
@@ -944,7 +929,7 @@ Commissions</h1>
                         <div class="about_btn index3_about_btn float_left">
                             <ul>
                                 <li>
-                                    <a href="?a=signup">Sign Up Now !</a>
+                                    <a href="signup">Sign Up Now !</a>
                                 </li>
                             </ul>
                         </div>

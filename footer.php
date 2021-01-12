@@ -36,17 +36,16 @@
 
                         <ul>
                             
-                            <li><a href="?a=home"><i class="fa fa-angle-right"></i>Home</a>
+                            <li><a href="home">Home</a>
                             </li>
                             
                             
-                            <li><a href="?a=about"><i class="fa fa-angle-right"></i>About us</a>
+                            <li><a href="about">About us</a>
                             </li>
 
-                            <li><a href="?a=plan"><i class="fa fa-angle-right"></i>Plans </a>
                             </li>
                             
-                            <li><a href="?a=faq"><i class="fa fa-angle-right"></i>Faq's</a>
+                            <li><a href="faq">Faq's</a>
                             </li>
                         </ul>
 
@@ -56,13 +55,13 @@
                     <div class="wrapper_second_useful wrapper_second_links">
 
                         <ul>
-                            <li><a href="?a=rules"><i class="fa fa-angle-right"></i>Terms</a>
+                            <li><a href="rules">Terms</a>
                             </li>
-                            <li><a href="?a=support"><i class="fa fa-angle-right"></i>Contact Us </a>
+                            <li><a href="support">Contact Us </a>
                             </li>
-                            <li><a href="?a=signup"><i class="fa fa-angle-right"></i>Sign Up </a>
+                            <li><a href="signup">Sign Up </a>
                             </li>
-                            <li><a href="?a=login"><i class="fa fa-angle-right"></i>Log In</a>
+                            <li><a href="login">Log In</a>
                             </li>
                             
                         </ul>
@@ -106,17 +105,11 @@
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                     <div class="copyright_wrapper float_left">
                         <div class="copyright">
-                            <p>Copyright <i class="far fa-copyright"></i> 2020-2021 www.International-Interest.com. all right reserved</p>
+                            <p>Copyright &copy; 2020-2021 www.International-Interest.com. all right reserved</p>
                         </div>
                         <div class="social_link_foter">
 
-                            <ul>
-                                <li><a href="https://www.facebook.com/InternationalInterest"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://twitter.com/Inter4interest"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="https://www.youtube.com/channel/UCiF3ZeIbh7XoCvi89VKcnZg"><i class="fab fa-youtube"></i></a></li>
-                            	<li><a href="https://www.instagram.com/International_Interest/"><i class="fab fa-instagram"></i></a></li>
-
-                            </ul>
+                         
                         </div>
                     </div>
                 </div>
