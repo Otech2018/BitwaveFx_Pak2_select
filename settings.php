@@ -11,6 +11,8 @@ $site_email ="info@bitwavefx.com";
 $site_address ="no 6 Tecnopoy Road London";
 $site_phone ="+44 7520 633267";
 $site_btc ="158N5dCHwuCQoxspob2SBMVzcuguGeLbcC";
+$site_telegram ="158N5dCHwuCQoxspob2SBMVzcuguGeLbcC";
+$site_whatsapp ="158N5dCHwuCQoxspob2SBMVzcuguGeLbcC";
 
 
 

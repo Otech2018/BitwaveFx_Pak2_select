@@ -1,4 +1,4 @@
-<?php include('../inc/settings.php'); 
+<?php include('../settings.php'); 
 
 
 if( !loggedin() ){
@@ -236,7 +236,7 @@ $total_cashout = new run_query("select sum(trant_amt) as total_cash_out from tra
 
 
 <footer class="footer">
-© 2020 <?= $site_name; ?> </footer>
+© 2021 <?= $site_name; ?> </footer>
 
 
 

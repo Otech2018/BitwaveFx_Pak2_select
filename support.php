@@ -84,22 +84,13 @@
                         <h3>contact us for support</h3>
 
 <br><b>Telegram</b>
-<br><a href="https://t.me/iLi2Support" target="_blank">@iLi2Support</a>
+<br><a href="<?=$site_telegram?>" target="_blank"><?=$site_telegram?></a>
 <br><b>Email</b>
-<br><a href="mailto:support@International-interest.com">support@International-interest.com</a>
-<br><a href="mailto:InternationalLegalprofit@gmail.com">InternationalLegalprofit@gmail.com</a>
+<br><a href="mailto:<?=$site_email; ?>"><?=$site_email; ?></a>
 <br><b>Telephone Number</b>
-<br><a href="tel:+442030263854">(+44) 203 026 3854 (London Office)</a>
-<br><a href="tel:+14243513552">(+1) 424 351 3552 (International)</a>
-<br><b>Twitter</b>
-<br><a href="https://twitter.com/Inter4interest" target="_blank">https://twitter.com/Inter4interest</a>
-<br><b>Facebook page</b>
-<br><a href="https://www.facebook.com/InternationalInterest" target="_blank">https://www.facebook.com/InternationalInterest</a>
-<br><b>Instagram</b>
-<br><a href="https://www.instagram.com/International_Interest" target="_blank">https://www.instagram.com/International_Interest</a>
-<br><b>YouTube</b>
-<br><a href="https://www.youtube.com/channel/UCiF3ZeIbh7XoCvi89VKcnZg" target="_blank">https://www.youtube.com/channel/UCiF3ZeIbh7XoCvi89VKcnZg</a>
-<br>-------------------------------------------------------
+<br><a href="tel:<?=$site_phone; ?>"><?=$site_phone; ?></a>
+
+<br><hr/>
 						
 						
 						
@@ -171,15 +162,7 @@ function checkform() {
                                 </div>
                             </div>
                             
-                            <!-- /.col-md-12 -->
-                                                        <div class="col-lg-12 col-md-12">
-                                <div class="form-s">
-                                    <div class="form-group i-subject">
-                                      <input type="text" class="form-control" name=validation_number placeholder="Enter Code">
-                                    <img src="show_validation_image&PHPSESSID=59pss1e7nchlm1ru3qdnmqkq15&rand=759253548">
-                                    </div> 
-                                </div>
-                            </div>
+                           
                                                         <!-- /.col-md-12 -->
                             <div class="col-md-12">
                                 <div class="tb_es_btn_div">

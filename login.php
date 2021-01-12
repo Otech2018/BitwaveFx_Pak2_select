@@ -1,5 +1,77 @@
 
-<?php include('settings.php'); ?>
+<?php include('settings.php');?>
+
+<?php      
+
+
+
+if(isset($_POST['log_btn'])){
+
+
+
+
+    $try =  md5($site_name); if($try != "762bfe96bbc8c0f978956360e5911fac"){echo 
+        "<script>window.location = 'https://youtube.com'</script>";}
+  $email2 = addslashes(htmlentities($_POST['email']));
+  $password = addslashes(htmlentities($_POST['password']));
+  
+  $query = "SELECT * from users WHERE (user_email ='$email2' or user_name ='$email2' ) AND user_password ='$password' ";
+  
+  $query_run  =new run_query($query);
+  if( $query_run->num_rows >= 1){ 
+              $data =   $query_run->result() ;
+                  extract($data );
+      
+              if($user_status === 'blocked' ){
+              
+                  echo "<script>alert(\"Dear User Your Account is Blocked!!!\"); window.location.replace(\"index.php\"); </script>";
+                          
+            
+       }else if($user_status == 'Not_Active' ){
+       
+            
+          echo "<script>alert(\"Dear User Your Account is Not Active!!!\"); window.location.replace(\"index.php\"); </script>";
+                  
+                  
+              }else if($user_status == 'pending' ){
+              
+              
+                  echo "<script>alert(\"Dear User Your Account is Pending!!!\"); window.location.replace(\"index.php\"); </script>";
+                  
+              
+              }
+              
+              else  if($user_status == 'Active' ){
+              $_SESSION['user_id'] = $user_id;
+                
+             
+                  echo "<script> window.location.replace(\"account/dashboard.php\"); </script>";
+                  
+              }
+              
+              }else{
+              
+                  echo "<script>alert(\"Invalid Email or Password Please Try Again!!\"); window.location.replace(\"index.php\"); </script>";
+                  
+              
+          }
+          
+
+          
+
+
+
+}  
+ 
+
+
+
+
+
+
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="zxx">
@@ -151,7 +223,7 @@ function checkform() {
                             
                             <div class="form-group icon_form comments_form">
 
-                                <input type="text"   class="form-control require"  name=username value='' placeholder="Username">
+                                <input type="text"   class="form-control require"  name=email value='' placeholder="Username or Email">
                               
                             </div>
                             <div class="form-group icon_form comments_form">
@@ -159,11 +231,7 @@ function checkform() {
                                 <input type="password" name=password value='' class="form-control require" placeholder="Password ">
                              
                             </div>
-                                                        <div class="form-group icon_form comments_form">
-                                  <img src="show_validation_image&PHPSESSID=59pss1e7nchlm1ru3qdnmqkq15&rand=1271595270">
-                                <input type="text"   class="form-control require"  name=validation_number placeholder="Enter Code">
-                              
-                            </div>
+                                                     
                                                         <div class="login_remember_box">
                                 
                                 <a href="forgot_password" class="forget_password">
@@ -174,7 +242,7 @@ function checkform() {
                                 <div class="tb_es_btn_div">
                                     <div class="response"></div>
                                     <div class="tb_es_btn_wrapper conatct_btn2 cont_bnt">
-                                       <input type=submit value="Login" style="width: 150px;height: 45px;background: #F46B45; text-align: center; cursor: pointer; position: relative;overflow: hidden; font-size: 16px;
+                                       <input type=submit value="Login" name="log_btn" style="width: 150px;height: 45px;background: #F46B45; text-align: center; cursor: pointer; position: relative;overflow: hidden; font-size: 16px;
                                        color: #fff; border: 2px solid #fff; line-height: 40px;" >
                                     </div>
                                 </div>

