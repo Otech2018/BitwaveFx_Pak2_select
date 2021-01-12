@@ -7,8 +7,16 @@
 
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     
-    <title>international-interest.com</title>
+   
+    <title><?=$site_name?> | Support </title>
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    
+    
+    <meta name="description" content="<?=$site_name;?> use crowdfunding method in order to attract small invests witch are a important part of a huge invests, to work in foreign exchange (FOREX) and stock market and crypto currency market so that we create reasonable profits.">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   
+   
    
     <meta name="author" content="" />
     <meta name="MobileOptimized" content="320" />

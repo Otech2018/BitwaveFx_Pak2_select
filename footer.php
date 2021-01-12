@@ -102,7 +102,7 @@
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
                     <div class="copyright_wrapper float_left">
                         <div class="copyright">
-                            <p>Copyright &copy; 2020-2021 <?=$site_link; ?>  all right reserved</p>
+                            <p>Copyright &copy; 2021 <?=$site_link; ?>  all right reserved</p>
                         </div>
                         <div class="social_link_foter">
 
