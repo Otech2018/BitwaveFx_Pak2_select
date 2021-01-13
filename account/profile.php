@@ -1,6 +1,4 @@
-<?php
-
- include('../settings.php'); 
+<?php include('../settings.php'); 
 
 
 if( !loggedin() ){
@@ -8,16 +6,7 @@ if( !loggedin() ){
     echo "<script> window.location.replace(\"../login.php\"); </script>";
   }
 
-
-
-
-
-
-  
-
 ?>
-
-
 
 
 
@@ -27,11 +16,11 @@ if( !loggedin() ){
 
 <head>
 <meta charset="utf-8">
-<meta name="description" content="<?= $site_name; ?> is an investment company located at <?= $site_address; ?>. It was incorporated on the 17th of August, 2017, which aims to reach out to Everyone, offering a guarnteed return on every investment which cuts across all social classes so that no one is left behind. <?= $site_name; ?> is an investment platform where returns are gotten as early as 14 days with a guaranteed return; People help People. We engage in real estate investment and development 30 years of experience in cunstruction services, crypto currency investment, architecture, manufacturing , structural engineering and Forex trading">
+<meta name="description" content="<?=$site_name; ?> is an investment company located at Shuwaikh, 787 Safat, 130078, Al-shuwaikh, Kuwait . Our headquarters are located in Calle Diputada Laura Rodríguez, 142, RM, La Reina Riga, Chile. It was incorporated on the 17th of August, 2017, which aims to reach out to Everyone, offering a guarnteed return on every investment which cuts across all social classes so that no one is left behind. <?=$site_name; ?>s is an investment platform where returns are gotten as early as Seven(7) days with a guaranteed return; People help People. We engage in real estate investment and development 30 years of experience in cunstruction services, crypto currency investment, architecture, manufacturing , structural engineering and Forex trading">
 <meta name="keywords" content="consulting, accountant, advisor, audit, beaver builder, broker, business, clean, company, consulting, corporate, finance, financial, insurance, trader">
 <meta name="keywords" content="consulting, accountant, advisor, audit, beaver builder, broker, business, clean, company, consulting, corporate, finance, financial, insurance, trader">
-<meta name="author" content="<?= $site_name; ?>">
-<title>Profile -- <?= $site_name; ?></title>
+<meta name="author" content="<?=$site_name; ?>s">
+<title>Profile -- Kreto Investments</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
@@ -139,7 +128,7 @@ if( isset($_POST['password_btn'])){
 <hr class="mb-20"> </div>
 <div class="card-body pt-0 text-center">
 <span class="text-muted ma-0 font-30 pl-0"><i class="mdi mdi-email text-success"></i> </span>
-<h6 class="font-normal text-grey"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" >[email&#160;protected]</a></h6>
+<h6 class="font-normal text-grey"><a href="info@reliablecryptoinvestment"</a></h6>
 <small class="text-muted pt-15 font-30 pl-0 db"><i class="mdi mdi-map-marker-radius text-danger"></i></small>
 <h6 class="font-normal text-grey"></h6>
 </div>
@@ -196,12 +185,12 @@ if( isset($_POST['password_btn'])){
 <input type="text" placeholder="Bitcoin Wallet" class="form-control form-control-line" name="btc_address" id="example-email" value="<?php echo $btc_address; ?>">
 </div>
 </div>
-<div class="form-group">
-<label for="example-email" class="col-md-12">Ethereum Wallet</label>
-<div class="col-md-12">
-<input type="text" placeholder="Ethereum Wallet" class="form-control form-control-line" name="eth_address" id="example-email" value="<?php echo $eth_address; ?>">
-</div>
-</div>
+
+
+
+<input type="hidden" name="eth_address" id="example-email" value="<?php echo $eth_address; ?>">
+
+
 <div class="form-group">
 <label class="col-md-12">Password</label>
 <div class="col-md-12">
@@ -260,7 +249,7 @@ if( isset($_POST['password_btn'])){
 
 
 <footer class="footer">
-© 2020 <?= $site_name; ?> </footer>
+© <?php echo date('Y'); ?> <?=$site_name; ?> </footer>
 
 
 

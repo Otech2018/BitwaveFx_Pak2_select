@@ -1,14 +1,10 @@
-<?php
-
- include('../settings.php'); 
+<?php include('../settings.php'); 
 
 
 if( !loggedin() ){
 
     echo "<script> window.location.replace(\"../login.php\"); </script>";
   }
-
-
 
 ?>
 
@@ -18,13 +14,16 @@ if( !loggedin() ){
 
 <head>
 <meta charset="utf-8">
-<meta name="description" content="<?= $site_name; ?> is an investment company located at <?= $site_address; ?>. It was incorporated on the 17th of August, 2017, which aims to reach out to Everyone, offering a guarnteed return on every investment which cuts across all social classes so that no one is left behind. <?= $site_name; ?> is an investment platform where returns are gotten as early as 14 days with a guaranteed return; People help People. We engage in real estate investment and development 30 years of experience in cunstruction services, crypto currency investment, architecture, manufacturing , structural engineering and Forex trading">
+<meta name="description" content="<?=$site_name; ?> is an investment company located at Shuwaikh, 787 Safat, 130078, Al-shuwaikh, Kuwait . Our headquarters are located in Calle Diputada Laura Rodríguez, 142, RM, La Reina Riga, Chile. It was incorporated on the 17th of August, 2017, which aims to reach out to Everyone, offering a guarnteed return on every investment which cuts across all social classes so that no one is left behind. <?=$site_name; ?>s is an investment platform where returns are gotten as early as Seven(7) days with a guaranteed return; People help People. We engage in real estate investment and development 30 years of experience in cunstruction services, crypto currency investment, architecture, manufacturing , structural engineering and Forex trading">
 <meta name="keywords" content="consulting, accountant, advisor, audit, beaver builder, broker, business, clean, company, consulting, corporate, finance, financial, insurance, trader">
 <meta name="keywords" content="consulting, accountant, advisor, audit, beaver builder, broker, business, clean, company, consulting, corporate, finance, financial, insurance, trader">
-<meta name="author" content="<?= $site_name; ?>">
-<title>New Investment -- <?= $site_name; ?></title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<meta name="author" content="<?=$site_name; ?>">
+<title>New Investment -- <?=$site_name;?> 
+
+</title>
+
 
     
 <?php
@@ -33,47 +32,23 @@ include('../frm/header.php');
 
 if( isset($_POST['invest_btn'])){
 
-    $package = addslashes(htmlentities($_POST['package']));
     $fund_amt = addslashes(htmlentities($_POST['amount']));
     
 
-    if( $package=='1'){
-        $min_amt = 500;
-        $max_amt =1000;
-        $roi = ($fund_amt  * 1) + $fund_amt; 
-		$package ="STARTER";
-		$coin ="7.1%";
-
-    }else if( $package=='2'){
-        $min_amt = 1001;
-        $max_amt =2000;
-        $roi = ($fund_amt  * 1.2 ) + $fund_amt; 
-        $package ="SILVER";
-		$coin ="8.6%";
-        
-    }else if( $package=='3'){
-        $min_amt = 2001;
-        $max_amt =5000;
-        $roi = ($fund_amt  * 1.7 ) + $fund_amt; 
-        $package ="GOLD";
-        $coin ="12.1%";
-        
-    }else{
-        $min_amt = 10001;
-        $max_amt =25000;
-        $roi = ($fund_amt  * 2 ) + $fund_amt; 
+   
+        $max_amt =9999999999999999999999999999;
+        $roi = $fund_amt  * 1.35; 
         $package ="PLATINUM";
-		$coin ="14.23%";
-        
-    }
+        $coin ="4.5%";
+     
     
-	
+    
 
 
     if( is_numeric($fund_amt) ){
 
         if( $fund_amt < $min_amt ||  $fund_amt > $max_amt  ){
-            echo "<script>alert(\"Invalid Amount, Please Make Sure the Amount Entered is Inline With the Package You Choose!!!\"); 
+            echo "<script>alert(\"Invalid Amount, Minimum Amoutn is $ $min_amt \"); 
             window.location.replace(\"../account/new_investment.php\"); </script>";
 
         }else{
@@ -82,7 +57,7 @@ if( isset($_POST['invest_btn'])){
            if( $fund_amt <= $bal){
                 
                 $tran_pop = $package;
-                $daily_p = $roi / 7;
+                $daily_p = $roi / 30;
                 $tran_invoice = "INV-".date('hismY');
                 $daily_p = number_format( $daily_p,4);
 
@@ -96,20 +71,20 @@ if( isset($_POST['invest_btn'])){
                 $deposite_user =new run_query("Update users set bal=bal-$fund_amt where user_id='$user_id' ");
                 $deposite_run =new run_query($qw);
                 //referral Bonus
-								 $gen_1 = $fund_amt * 0.1;
-								 if( $user_referrer !='' ){
-							$ref_bon_query  = new run_query("SELECT * FROM user_ref where user_ref_email='$user_name'  ");
-							
-								$ref_bon_query_dta =	$ref_bon_query->result();
-							
-								extract($ref_bon_query_dta );
-								
-							$gen1_query  = new run_query(" update `users` SET user_ref_bonus = user_ref_bonus + $gen_1 WHERE user_name='$gen1_email' ");
+                                 $gen_1 = $fund_amt * 0.1;
+                                 if( $user_referrer !='' ){
+                            $ref_bon_query  = new run_query("SELECT * FROM user_ref where user_ref_email='$user_name'  ");
+                            
+                                $ref_bon_query_dta =    $ref_bon_query->result();
+                            
+                                extract($ref_bon_query_dta );
+                                
+                            $gen1_query  = new run_query(" update `users` SET user_ref_bonus = user_ref_bonus + $gen_1 WHERE user_name='$gen1_email' ");
 
-    $site_email_send = "info@KretoInvestment.com";		
-    $welcome_email_subject = "New Investment of $ $fund_amt | KretoInvestment";
+    $site_email_send = "info@reliablecryptoinvestment";     
+    $welcome_email_subject = "New Investment of $ $fund_amt | <?=$site_name; ?>";
     $welcome_email_headers .= "Content-type:text/html;charset=UTF-8 \r\n";
-    $welcome_email_headers .= "From: $site_name";	
+    $welcome_email_headers .= "From: $site_name";   
     
     
      $welcome_email_body = "
@@ -134,7 +109,7 @@ if( isset($_POST['invest_btn'])){
         </b>
         Visit us on <br/>
     
-        https://$site_name.com <br/><br/><br/>
+        https://$site_link <br/><br/><br/>
     
         Regards,  $site_name.
         </body>
@@ -144,13 +119,13 @@ if( isset($_POST['invest_btn'])){
     
          mail($user_email,$welcome_email_subject,$welcome_email_body,$welcome_email_headers);
             
-							
-                                }	
+                            
+                                }   
                                 echo "<script>alert(\"Investment Started Successfully!!!\"); window.location.replace(\"../account/new_investment.php\"); </script>";
         
 
             }else{
-                echo "<script>alert(\"Insuficient Amount, You do not have enough money for this Investment!!! \"); window.location.replace(\"../account/new_investment.php\"); </script>";
+                echo "<script>alert(\"Insuficient Amount, You do not have enough money for this Investment!!!\"); window.location.replace(\"../account/new_investment.php\"); </script>";
 
             }
                                                  
@@ -199,177 +174,7 @@ if( isset($_POST['invest_btn'])){
 
 
 
-<div class="row">
-<div class="col-12 mt-30 text-center">
-<h4 class="mb-0">INVESTMENT PACKAGES</h4>
-<br><br>
-</div>
 
- 
-
-<div class="col-md-6">
-<div class="card card-inverse card-danger">
-<div class="card-header">
-<h4 class="mb-0 text-dark text-center">Starter Plan</h4></div>
-<div class="card-body">
-<div class="table-responsive">
-<table class="table">
-<thead>
-<tr>
- <th></th>
-<th>Roi</th>
-<th>Minimum Investment</th>
-<th>Maximum Investment</th>
-<th>Return Type</th>
-<th>Duration</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<div class="form-group">
-<input type="radio" name="package" required class="form-control-input" value="1">
-<label class="custom-control-label" for="customRadio5"></label>
-</div>
-</td>
-<td>100%</td>
-<td>$500.00</td>
-<td>$1,000.00</td>
-<td>Daily</td>
-<td><span class="label label-danger">14 Days</span> </td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-
-<div class="col-md-6">
-<div class="card card-inverse card-danger">
-<div class="card-header">
-<h4 class="mb-0 text-dark text-center">Silver Plan</h4></div>
-<div class="card-body">
-<div class="table-responsive">
-<table class="table">
-<thead>
-<tr>
- <th></th>
-<th>Roi</th>
-<th>Minimum Investment</th>
-<th>Maximum Investment</th>
-<th>Return Type</th>
-<th>Duration</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<div class="form-group">
-<input type="radio" name="package" required class="form-control-input" value="2">
-<label class="custom-control-label" for="customRadio5"></label>
-</div>
-</td>
-<td>120%</td>
-<td>$1001.00</td>
-<td>$2000.00</td>
-<td>Daily</td>
-<td><span class="label label-danger">14 Days</span> </td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-
-<div class="col-md-6">
-<div class="card card-inverse card-danger">
-<div class="card-header">
-<h4 class="mb-0 text-dark text-center">Gold Plan</h4></div>
-<div class="card-body">
-<div class="table-responsive">
-<table class="table">
-<thead>
-<tr>
-<th></th>
-<th>Roi</th>
-<th>Minimum Investment</th>
-<th>Maximum Investment</th>
-<th>Return Type</th>
-<th>Duration</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<div class="form-group">
-<input type="radio" name="package" required class="form-control-input" value="3">
-<label class="custom-control-label" for="customRadio5"></label>
-</div>
-</td>
-<td>170%</td>
-<td>$2,001.00</td>
-<td>$5,000.00</td>
-<td>Daily</td>
-<td><span class="label label-danger">14 Days</span> </td>
-</tr>
-</tbody>
- </table>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-<div class="col-md-6">
-<div class="card card-inverse card-danger">
-<div class="card-header">
-<h4 class="mb-0 text-dark text-center">Platinum Plan</h4></div>
-<div class="card-body">
-<div class="table-responsive">
-<table class="table">
-<thead>
-<tr>
-<th></th>
-<th>Roi</th>
-<th>Minimum Investment</th>
-<th>Maximum Investment</th>
-<th>Return Type</th>
-<th>Duration</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<div class="form-group">
-<input type="radio" name="package" required class="form-control-input" value="4">
-<label class="custom-control-label" for="customRadio5"></label>
-</div>
-</td>
-<td>200%</td>
-<td>$10,001.00</td>
-<td>$25,000.00</td>
-<td>Daily</td>
-<td><span class="label label-danger">14 Days</span> </td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 <div class="row">
 <div class="col-12 mt-30">
@@ -403,7 +208,7 @@ if( isset($_POST['invest_btn'])){
 
 
 <footer class="footer">
-© 2020 <?= $site_name; ?> </footer>
+© <?php echo date('Y'); ?> <?=$site_name; ?> </footer>
 
 
 

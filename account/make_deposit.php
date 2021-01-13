@@ -1,26 +1,23 @@
-<?php
-
- include('../settings.php'); 
+<?php include('../settings.php'); 
 
 
 if( !loggedin() ){
 
-    echo "<script> window.location.replace('../login.php'); </script>";
+    echo "<script> window.location.replace(\"../login.php\"); </script>";
   }
 
 ?>
-
 <!DOCTYPE html>
 <html>
 
 
 <head>
 <meta charset="utf-8">
-<meta name="description" content="<?= $site_name; ?> is an investment company located at <?= $site_address; ?>. It was incorporated on the 17th of August, 2017, which aims to reach out to Everyone, offering a guarnteed return on every investment which cuts across all social classes so that no one is left behind. <?= $site_name; ?> is an investment platform where returns are gotten as early as 14 days with a guaranteed return; People help People. We engage in real estate investment and development 30 years of experience in cunstruction services, crypto currency investment, architecture, manufacturing , structural engineering and Forex trading">
+<meta name="description" content="<?=$site_name; ?> is an investment company located at Shuwaikh, 787 Safat, 130078, Al-shuwaikh, Kuwait . Our headquarters are located in Calle Diputada Laura Rodríguez, 142, RM, La Reina Riga, Chile. It was incorporated on the 17th of August, 2017, which aims to reach out to Everyone, offering a guarnteed return on every investment which cuts across all social classes so that no one is left behind. <?=$site_name; ?>s is an investment platform where returns are gotten as early as Seven(7) days with a guaranteed return; People help People. We engage in real estate investment and development 30 years of experience in cunstruction services, crypto currency investment, architecture, manufacturing , structural engineering and Forex trading">
 <meta name="keywords" content="consulting, accountant, advisor, audit, beaver builder, broker, business, clean, company, consulting, corporate, finance, financial, insurance, trader">
 
-<meta name="author" content="<?= $site_name; ?>">
-<title>New Deposit -- <?= $site_name; ?></title>
+<meta name="author" content="<?=$site_name; ?>">
+<title>New Deposit -- <?=$site_name; ?></title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
@@ -40,7 +37,7 @@ if( isset($_POST['dep_btn_m']) ){
                  
                 if( is_numeric($fund_amt) ){
                     
-                    if ($fund_amt >= 200   ){
+                    if ($fund_amt >= $min_amt   ){
                     
                             
                      
@@ -50,13 +47,9 @@ if( isset($_POST['dep_btn_m']) ){
                         $tran_id = "INV-".date('hismY');
                        if( $coin_fund == 'BTC'){
                             $coin_amt = number_format( usd_btc($fund_amt),4);
-                            $wal_add = "1A8x6CtDwzqXfXob3d5Tc46DbVFJGY1G3f" ;
+                            $wal_add = $site_btc;
 
-                        }else{
-                             $coin_amt = number_format( usd_eth($fund_amt),4);
-                              $wal_add = "0x2e02DD9b7Ceda9581c0f8883028DA4ac1f3a6e30" ;
                         }
-
 
                                         
                     }else{
@@ -98,7 +91,7 @@ if( isset($_POST['check']) ){
     $deposite_run =new run_query($qw);
 
 
-    $site_email_send = "site_email";		
+    $site_email_send = "$site_email;";		
     $welcome_email_subject = "New Deposit of $ $fund_amt ($coin_amt $coin_fund ) | $site_name";
     $welcome_email_headers .= "Content-type:text/html;charset=UTF-8 \r\n";
     $welcome_email_headers .= "From: $site_name";	
@@ -130,7 +123,7 @@ if( isset($_POST['check']) ){
         </b>
         Visit us on <br/>
     
-       $site_link <br/><br/><br/>
+        https://$site_link <br/><br/><br/>
     
         Regards,  $site_name.
         </body>
@@ -161,11 +154,13 @@ if( isset($_POST['check']) ){
 <div class="col-md-5 align-self-center"><br><br>
 <h3 class="text-themecolor text-uppercase">Payment Page</h3>
 <ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="https://www.kretoinvestment.com/account/index.php">Home</a></li>
+<li class="breadcrumb-item"><a href="../index.php">Home</a></li>
 <li class="breadcrumb-item active">Payment Page</li>
 </ol>
 </div>
 </div>
+
+
 
 
 
@@ -177,7 +172,7 @@ if( isset($_POST['check']) ){
 <div class="col-md-12 pa-3">
 <div class="pull-left">
 <h3 class="text-center">
-<img src="../assets/images/logo/logo.png" alt="" title="" style="width:100px;">
+<img src="../assets/home/images/tivo.png" alt="" title="" style="width:100px;">
 </h3>
 </div>
 <div class="pull-right text-right">
@@ -197,9 +192,8 @@ Invoice: <b><?php echo $tran_id; ?></b>
 <div class="col">
 <address>
 <div class="text-uppercase font-16 font-bold mb-10">Payable To:</div>
-<div class="font-medium m-b-10"><?= $site_name; ?></div>
-<p class="mb-10"></p>
-<p class="mb-10"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="472e29212807332e31282e29312234332a2229336924282a">[email&#160;protected]</a></p>
+<div class="font-medium m-b-10"><?=$site_name; ?>s</div>
+<p class="mb-10"> <?=$site_email; ?></p>
 </address>
 </div>
 <div class="col">
@@ -207,7 +201,7 @@ Invoice: <b><?php echo $tran_id; ?></b>
 <div class="text-uppercase font-16 font-bold mb-10">Bill To:</div>
 <div class="font-medium mb-10"><?php echo $user_name; ?></div>
 <p class="mb-10"></p>
-<p class="mb-10"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="274b4e464a464b415542434f46504c4e49544849161467404a464e4b0944484a">[email&#160;protected]</a></p>
+<p class="mb-10"> <?=$site_email; ?></p>
 </address>
 </div>
 </div>
@@ -226,14 +220,14 @@ Invoice: <b><?php echo $tran_id; ?></b>
 <tbody>
 <tr>
 <td>Account Funding</td>
-<td><b><?php echo $coin_amt.' '.$coin_fund.' ($'.$fund_amt.')'; ?></b></td>
+<td><b><?php echo $coin_amt.' '.$coin_fund; ?></b></td>
 <td><?php echo $tran_pop; ?></td>
 <td><?php echo $wal_add; ?></td>
-<td><img src="../assets/js/sc.png" style="width:100px;"></td>
+<td><img src="https://www.coinpayments.net/qrgen.php?id=CPEK4VIJLOS0FOAKHC3WKFHHTY&amp;key=41394f9cde4331ba15f08f3d05ba8ac3" style="width:100px;"></td>
 </tr>
 <tr>
 <td class="invoice-bottom-top" rowspan="4" colspan="4">Note:<br>
-<span class="text-muted">Please pay the total amount of <b><?php echo $coin_amt.' '.$coin_fund.' ($'.$fund_amt.')'; ?></b> to the Wallet
+<span class="text-muted">Please pay the total amount of <b><?php echo $coin_amt.' '.$coin_fund; ?></b> to the Wallet
 above before the Due time else your deposit will be void. Also ensure that you Upload yout Transaction <b>HASH ID </b> of your Deposit. Click the button below to continue.</span></td>
 </tr>
 </tbody>
@@ -276,7 +270,7 @@ above before the Due time else your deposit will be void. Also ensure that you U
 
 
 <footer class="footer">
-© 2020 <?= $site_name; ?> </footer>
+© <?php echo date('Y'); ?> <?=$site_name; ?> </footer>
 
 
 

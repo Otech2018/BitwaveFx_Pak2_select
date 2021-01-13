@@ -1,6 +1,4 @@
-<?php
-
- include('../settings.php'); 
+<?php include('../settings.php'); 
 
 
 if( !loggedin() ){
@@ -11,19 +9,17 @@ if( !loggedin() ){
 ?>
 
 
-
-
 <!DOCTYPE html>
 <html>
 
 
 <head>
 <meta charset="utf-8">
-<meta name="description" content="<?= $site_name; ?> is an investment company located at <?= $site_address; ?>. It was incorporated on the 17th of August, 2017, which aims to reach out to Everyone, offering a guarnteed return on every investment which cuts across all social classes so that no one is left behind. <?= $site_name; ?> is an investment platform where returns are gotten as early as 14 days with a guaranteed return; People help People. We engage in real estate investment and development 30 years of experience in cunstruction services, crypto currency investment, architecture, manufacturing , structural engineering and Forex trading">
+<meta name="description" content="<?=$site_name; ?> is an investment company located at Shuwaikh, 787 Safat, 130078, Al-shuwaikh, Kuwait . Our headquarters are located in Calle Diputada Laura Rodríguez, 142, RM, La Reina Riga, Chile. It was incorporated on the 17th of August, 2017, which aims to reach out to Everyone, offering a guarnteed return on every investment which cuts across all social classes so that no one is left behind. <?=$site_name; ?>s is an investment platform where returns are gotten as early as Seven(7) days with a guaranteed return; People help People. We engage in real estate investment and development 30 years of experience in cunstruction services, crypto currency investment, architecture, manufacturing , structural engineering and Forex trading">
 <meta name="keywords" content="consulting, accountant, advisor, audit, beaver builder, broker, business, clean, company, consulting, corporate, finance, financial, insurance, trader">
 <meta name="keywords" content="consulting, accountant, advisor, audit, beaver builder, broker, business, clean, company, consulting, corporate, finance, financial, insurance, trader">
-<meta name="author" content="<?= $site_name; ?>">
-<title>Referral -- <?= $site_name; ?></title>
+<meta name="author" content="<?=$site_name; ?>s">
+<title>Referral -- <?=$site_name; ?></title>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -104,8 +100,8 @@ include('../frm/header.php');
 								$email_amt = $user_ref_bonus;
 
 
-								$site_email_send = "info@KretoInvestment.com";		
-								$welcome_email_subject = "Withdrawal of Referral  Bonus - $ $user_ref_bonus | KretoInvestment";
+								$site_email_send = "info@reliablecryptoinvestment";		
+								$welcome_email_subject = "Withdrawal of Referral  Bonus - $ $user_ref_bonus | Reliable Crypto  Investment";
 								$welcome_email_headers .= "Content-type:text/html;charset=UTF-8 \r\n";
 								$welcome_email_headers .= "From: $site_name";	
 								
@@ -180,7 +176,7 @@ include('../frm/header.php');
 <h6 class="card-subtitle"></h6>
 <div class="col-lg-12">
 <div class="input-group mb-3">
-<input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" value="https://kretoinvestment.com/register.php?ref=<?php echo $user_name;?>" readonly id="clipboard_input">
+<input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" value="https://reliablecryptoinvestment.com/register.php?ref=<?php echo $user_name;?>" readonly id="clipboard_input">
 <div class="input-group-append">
 <button class="btn btn-primary" data-clipboard="true" data-clipboard-target="#clipboard_input" type="button"><i class="fa fa-clipboard"></i> Copy</button>
 </div>
@@ -286,7 +282,7 @@ $query_run_ref_data1 =	$query_run_ref1->result();
 
 
 <footer class="footer">
-© 2020 <?= $site_name; ?> </footer>
+© <?php echo date('Y'); ?> <?=$site_name; ?> </footer>
 
 
 

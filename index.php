@@ -214,7 +214,7 @@ Every page of this website is dedicated to these three factors in some fashion.
                             <div class="about_btn index3_about_btn float_left">
                                 <ul>
                                     <li>
-                                        <a href="about">About <?=$site_name; ?></a>
+                                        <a href="about">About </a>
                                     </li>
                                 </ul>
                             </div>

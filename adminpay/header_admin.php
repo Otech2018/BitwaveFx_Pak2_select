@@ -61,6 +61,7 @@ $value = $quantity / $result;
       <a href="../index.php"  class="brand-logo dip_font"><?php echo $site_name; ?></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
 		
+	   <li><a href="admin_dash.php" class="dip_font white-text">Dasboard</a></li>
 	   <li><a href="tra1.php" class="dip_font white-text">Transaction</a></li>
 		
 	         <li><a href="user.php" class="dip_font white-text">Users </a></li>

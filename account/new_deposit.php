@@ -1,6 +1,4 @@
-<?php
-
- include('../settings.php'); 
+<?php include('../settings.php'); 
 
 
 if( !loggedin() ){
@@ -16,11 +14,11 @@ if( !loggedin() ){
 
 <head>
 <meta charset="utf-8">
-<meta name="description" content="<?= $site_name; ?> is an investment company located at <?= $site_address; ?>. It was incorporated on the 17th of August, 2017, which aims to reach out to Everyone, offering a guarnteed return on every investment which cuts across all social classes so that no one is left behind. <?= $site_name; ?> is an investment platform where returns are gotten as early as 14 days with a guaranteed return; People help People. We engage in real estate investment and development 30 years of experience in cunstruction services, crypto currency investment, architecture, manufacturing , structural engineering and Forex trading">
-<meta name="keywords" content="consulting, accountant, advisor, audit, beaver builder, broker, business, clean, company, consulting, corporate, finance, financial, insurance, trader">
+<meta name="description" content="<?=$site_name; ?> is an investment company located at Shuwaikh, 787 Safat, 130078, Al-shuwaikh, Kuwait . Our headquarters are located in Calle Diputada Laura Rodríguez, 142, RM, La Reina Riga, Chile. It was incorporated on the 17th of August, 2017, which aims to reach out to Everyone, offering a guarnteed return on every investment which cuts across all social classes so that no one is left behind. <?=$site_name; ?>s is an investment platform where returns are gotten as early as Seven(7) days with a guaranteed return; People help People. We engage in real estate investment and development 30 years of experience in cunstruction services, crypto currency investment, architecture, manufacturing , structural engineering and Forex trading">
+<meta name="keywords" content="<?=$site_name; ?> consulting, accountant, advisor, audit, beaver builder, broker, business, clean, company, consulting, corporate, finance, financial, insurance, trader">
 
-<meta name="author" content="<?= $site_name; ?>">
-<title>New Deposit -- <?= $site_name; ?></title>
+<meta name="author" content="<?=$site_name; ?>">
+<title>New Deposit -- <?=$site_name; ?></title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
@@ -31,7 +29,8 @@ include('../frm/header.php');
 
 ?>
 
-
+</head>
+<body>
 
 <div class="page-wrapper">
 
@@ -94,26 +93,26 @@ include('../frm/header.php');
 <label class="control-label">Amount</label>
 <input type="text" id="firstName" class="form-control form-control-lg" required placeholder="Amount To Deposit" name="fund_amt">
 <small class="form-control-feedback">
-    Minimum deposit is $200 
+    Minimum deposit is <?=$min_amt;?> 
 </small>
 </div>
 </div>
 </div>
 
 
-<div class="row pt-20">
+<!-- <div class="row pt-20">
 <div class="col-md-12">
 <div class="form-group">
 <label class="control-label">Select Coin to Fund</label>
 <select class="form-control form-control-lg" name="coin_fund">
-<option value="ETH">ETHEREUM</option>
-<option value="BTC">BITCOIN</option>
-<!-- <option value="LTE">LITECOIN</option>
-<option value="XRP">RIPPLE</option> -->
+<option value="ETH">ETH</option>
+<option value="BTC">BTC</option>
 </select>
 </div>
 </div>
-</div>
+</div> -->
+
+<input type="hidden" value="BTC" name="coin_fund"  />
 <div class="form-actions text-center">
 <button type="reset" class="btn btn-inverse">Cancel</button>
 <button type="submit" class="btn btn-success" name='dep_btn_m'> <i class="fa fa-check"></i> Deposit</button>
@@ -135,7 +134,7 @@ include('../frm/header.php');
 
 
 <footer class="footer">
-© 2020 <?= $site_name; ?> </footer>
+© <?php echo date('Y'); ?> <?=$site_name; ?> </footer>
 
 
 

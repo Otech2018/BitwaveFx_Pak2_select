@@ -1,9 +1,6 @@
 <?php session_start(); 
 
 
-$reg_Date = date('Y-m-d');
-$deposite_exp_date = date('Y-m-d',strtotime('30 days') );
-
 
 $site_name ="BitWaveFx";
 $site_link ="bitwavefx.com";
@@ -11,8 +8,8 @@ $site_email ="info@bitwavefx.com";
 $site_address ="no 6 Tecnopoy Road London";
 $site_phone ="+44 7520 633267";
 $site_btc ="158N5dCHwuCQoxspob2SBMVzcuguGeLbcC";
-$site_telegram ="158N5dCHwuCQoxspob2SBMVzcuguGeLbcC";
-$site_whatsapp ="158N5dCHwuCQoxspob2SBMVzcuguGeLbcC";
+$site_telegram ="https://telegram.com";
+$site_whatsapp ="https://facebook.com";
 
 
 
@@ -73,7 +70,7 @@ class connect{
 
 //site variables
 $reg_Date = date('Y-m-d');
-$deposite_exp_date = date('Y-m-d',strtotime('14 Days') );
+$deposite_exp_date = date('Y-m-d',strtotime('30 Days') );
 
 
 // $site_lowest_amt = 5000;

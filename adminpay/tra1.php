@@ -1,5 +1,5 @@
-<?php
- include('../inc/settings.php'); 
+<?php include('../settings.php'); 
+
  
 
 								

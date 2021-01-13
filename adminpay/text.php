@@ -1,7 +1,5 @@
-<?php
+<?php include('../settings.php'); 
 
- include('../inc/settings.php'); 
- 
 $active= "dash";
 
  
